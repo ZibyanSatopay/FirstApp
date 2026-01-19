@@ -104,15 +104,19 @@
             grid-column: span 2;
             width: 130px;
         }
+
+        .wide {
+            grid-column: span 2;
+            width: 130px;
+        }
     </style>
 </head>
 <body>
     <div class="calculator">
         <input type="text" class="display" id="display" readonly>
         <div class="buttons">
-            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="clear wide" onclick="clearDisplay()">C</button>
             <button class="clear" onclick="backspace()">←</button>
-            <button class="operator" onclick="appendToDisplay('%')">%</button>
             <button class="operator" onclick="appendToDisplay('/')">÷</button>
 
             <button class="number" onclick="appendToDisplay('7')">7</button>
